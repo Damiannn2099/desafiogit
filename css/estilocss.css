@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: white;
+  font-family: 'Georama', sans-serif; }
+  body header {
+    background-color: #231f1e;
+    top: 0px; }
+    body header .estilo_nav {
+      text-align: right;
+      list-style-position: unset;
+      position: relative;
+      bottom: 200px; }
+      body header .estilo_nav ul {
+        list-style-type: none;
+        padding: 0;
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: right; }
+        body header .estilo_nav ul li {
+          display: inline;
+          padding: 10px;
+          margin: 10px; }
+          body header .estilo_nav ul li a {
+            color: bisque;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 30px;
+            list-style-type: upper-roman; }
+
+main .titulo {
+  color: #231f1e;
+  text-align: center;
+  padding: 25px;
+  margin: 25px;
+  border: 2px solid bisque; }
+  main .titulo h1 {
+    font-weight: bold;
+    font-size: 50px;
+    font-style: normal;
+    font-family: 'Georama', sans-serif;
+    text-transform: uppercase; }
+    main .titulo h1 p {
+      font-weight: bold;
+      font-size: 35px;
+      font-style: italic;
+      font-family: 'Georama', sans-serif;
+      line-height: 3;
+      letter-spacing: 1px; }
+
+main .presentes {
+  color: #231f1e;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid bisque;
+  margin: 25px; }
+  main .presentes h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 2px; }
+
+main .ubi {
+  color: #0f0fb6;
+  text-decoration: underline;
+  padding: 20px;
+  margin: 15px;
+  border-style: hidden; }
+
+footer h1 {
+  color: bisque;
+  background-color: #231f1e;
+  font-size: 30px; }
+
+footer .estilo_lista_redes {
+  color: bisque;
+  background-color: #231f1e;
+  text-align: center; }
+  footer .estilo_lista_redes ul li {
+    font-size: 25px;
+    font-weight: unset;
+    padding: 10px;
+    margin: 10px;
+    bottom: 10px; }
+    footer .estilo_lista_redes ul li a {
+      text-decoration: none;
+      color: bisque; }
+
+@media only screen and (min-width: 769px) and (max-width: 1024) {
+  body {
+    background-color: white; }
+  .logo img {
+    width: 15%; }
+  .navBack {
+    background-color: #231f1e;
+    position: sticky;
+    top: 0px; }
+  .estilo_nav {
+    text-align: right;
+    list-style-position: unset;
+    position: sticky;
+    bottom: 500px; }
+  .estilo_nav li {
+    display: inline;
+    padding: 10px;
+    margin: 10px; }
+  .estilo_nav li a {
+    color: bisque;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    list-style-type: upper-roman; } }

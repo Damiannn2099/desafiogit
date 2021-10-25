@@ -1,0 +1,30 @@
+footer{
+    h1{
+        color: $colorrgb3;
+        background-color:$colorrgb;
+        font-size: 40px;
+        padding: 20px;
+        text-align: center;
+    }
+    .estilo_lista_redes{
+        color: $colorrgb3;
+        background-color:$colorrgb;
+        text-align: center;
+        padding: 40px;
+        .estilo_lista_redes__ul{
+            list-style: none;
+            .estilo_lista_redes__li{
+                font-size: 25px;
+                font-weight: unset;
+                padding: 15px;
+                margin: 15px;
+                bottom: 10px;
+                display: inline;
+                a{
+                    text-decoration: none;
+                    color: bisque;
+                }
+            }
+        }
+    }
+}

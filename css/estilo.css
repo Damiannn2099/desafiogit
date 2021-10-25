@@ -1,0 +1,219 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.logo img{
+    width: 15%;
+}
+.navBack{
+    background-color: #231f1e;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.estilo_nav{
+    text-align: right;
+    list-style-position:unset;
+    position: sticky;
+    bottom: 500px;
+}
+.estilo_nav li{
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+}
+.estilo_nav li a{
+    color: bisque;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    list-style-type: upper-roman;
+}
+.container{
+    width: 100%;
+    height: 3000px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: 
+    "titulo titulo titulo titulo titulo"
+    "carousel-inner carousel-inner carousel-inner carousel-inner carousel-inner"
+    "img_picada img_picada img_picada img_picada img_picada"
+    "presentes presentes presentes presentes presentes"
+    "card-group card-group card-group card-group card-group"
+    "presentes_img presentes_img presentes_img presentes_img presentes_img"
+    "ubicacion ubicacion ubicacion ubicacion ubicacion";
+}
+.carousel-inner{
+    grid-area: carousel-inner;
+}
+.card-group{
+    grid-area: card-group;
+}
+.img_picada{
+    grid-area: img_picada;
+    text-align: center;
+    border: #231f1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img_picada{
+    transition: all 3s ease;
+}
+.img_picada:hover{
+    transform: scale(1.1,1.1);
+}
+.titulo{
+    color: #231f1e;
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+    border: 2px solid bisque;
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo h1{
+    font-weight: bold;
+    font-size: 50px;
+    font-style:normal;
+    font-family:'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+.titulo p{
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    font-family:'Open Sans', sans-serif;
+    line-height: 3;
+    letter-spacing: 1px;
+}
+.presentes{
+    color:#231f1e;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid bisque;
+    margin: 25px;
+    grid-area: presentes;
+}
+.presentes{
+    animation-duration: 5s;
+    animation-name: presentes;
+    animation-iteration-count: infinite;
+}
+@keyframes presentes {
+    0% {
+        opacity: 0;
+       }
+    50% {
+        opacity: 1;
+        }
+    100%{
+        opacity: 0;
+        }       
+}
+.presentes h2{
+    font-family:'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+.presentes_img{
+    text-align: center;
+    grid-area: presentes_img;
+}
+.ubi{
+    color: bisque;
+    text-decoration: underline;
+    padding: 20px;
+    margin: 15px;
+    grid-area: ubicacion;
+    background: linear-gradient(#231f1e,bisque);
+}
+
+.redes h1{
+    color: bisque;
+    background-color:#231f1e;
+    font-size: 30px;
+}
+.estilo_lista_redes{
+    color:bisque;
+    background-color:#231f1e;
+    text-align: center;
+}
+.estilo_lista_redes ul li{
+    font-size: 25px;
+    font-weight: unset;
+    padding: 10px;
+    margin: 10px;
+    bottom: 10px;
+}
+.estilo_lista_redes ul li a{
+    text-decoration: none;
+    color: bisque;
+}
+
+/*VistaMobile*/
+@media only screen and (max-width:768px){
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    .logo img{
+        width: 20%;
+    }
+    .navBack{
+        background-color: #231f1e;
+        position: sticky;
+        top: 0px;
+    }
+    .estilo_nav{
+        text-align: right;
+        list-style-position:unset;
+        position: sticky;
+        bottom: 500px;
+    }
+    .estilo_nav li{
+        display: inline;
+        padding: 5px;
+        margin: 5px;
+    }
+    .estilo_nav li a{
+        color: bisque;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 10px;
+        list-style-type: upper-roman;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1024){
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        .logo img{
+            width: 15%;
+        }
+        .navBack{
+            background-color: #231f1e;
+            position: sticky;
+            top: 0px;
+        }
+        .estilo_nav{
+            text-align: right;
+            list-style-position:unset;
+            position: sticky;
+            bottom: 500px;
+        }
+        .estilo_nav li{
+            display: inline;
+            padding: 10px;
+            margin: 10px;
+        }
+        .estilo_nav li a{
+            color: bisque;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 30px;
+            list-style-type: upper-roman;
+        }
+}

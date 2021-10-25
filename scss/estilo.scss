@@ -1,0 +1,40 @@
+@import "body";
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
+
+
+
+
+@media only screen and (min-width:769px) and (max-width:1024){
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        .logo img{
+            width: 15%;
+        }
+        .navBack{
+            background-color: #231f1e;
+            position: sticky;
+            top: 0px;
+        }
+        .estilo_nav{
+            text-align: right;
+            list-style-position:unset;
+            position: sticky;
+            bottom: 500px;
+        }
+        .estilo_nav li{
+            display: inline;
+            padding: 10px;
+            margin: 10px;
+        }
+        .estilo_nav li a{
+            color: bisque;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 30px;
+            list-style-type: upper-roman;
+        }   
+}

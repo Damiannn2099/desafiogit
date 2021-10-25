@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'Georama', sans-serif;
+}
+
+header {
+  background-color: #231f1e;
+  top: 0px;
+}
+
+header .estilo_nav {
+  text-align: right;
+  list-style-position: unset;
+  position: relative;
+  bottom: 200px;
+}
+
+header .estilo_nav ul :hover {
+  background: #3f3634;
+  border-radius: 85%;
+}
+
+header .estilo_nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 90%;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+header .estilo_nav ul li {
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+}
+
+header .estilo_nav ul li a {
+  color: rgba(252, 217, 174, 0.945);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  list-style-type: upper-roman;
+}
+
+main .titulo {
+  color: #231f1e;
+  text-align: center;
+  padding: 25px;
+  margin: 25px;
+  border: 2px solid rgba(255, 228, 196, 0);
+}
+
+main .titulo h1 {
+  font-weight: bold;
+  font-size: 70px;
+  font-style: normal;
+  font-family: 'Georama', sans-serif;
+  text-transform: uppercase;
+}
+
+main .titulo p {
+  font-weight: bold;
+  font-size: 25px;
+  font-style: italic;
+  font-family: 'Georama', sans-serif;
+  line-height: 3;
+  letter-spacing: 1px;
+}
+
+main .presentes {
+  color: #231f1e;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid bisque;
+  margin: 25px;
+}
+
+main .presentes h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+main .frascosXs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .frascosXs img {
+  width: 70%;
+}
+
+main .ubi {
+  color: #0f0fb6;
+  text-decoration: underline;
+  padding: 20px;
+  margin: 15px;
+  border-style: hidden;
+}
+
+footer h1 {
+  color: rgba(252, 217, 174, 0.945);
+  background-color: #231f1e;
+  font-size: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .estilo_lista_redes {
+  color: rgba(252, 217, 174, 0.945);
+  background-color: #231f1e;
+  text-align: center;
+  padding: 40px;
+}
+
+footer .estilo_lista_redes .estilo_lista_redes__ul {
+  list-style: none;
+}
+
+footer .estilo_lista_redes .estilo_lista_redes__ul .estilo_lista_redes__li {
+  font-size: 25px;
+  font-weight: unset;
+  padding: 15px;
+  margin: 15px;
+  bottom: 10px;
+  display: inline;
+}
+
+footer .estilo_lista_redes .estilo_lista_redes__ul .estilo_lista_redes__li a {
+  text-decoration: none;
+  color: bisque;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024) {
+  body {
+    background-color: white;
+  }
+  .logo img {
+    width: 15%;
+  }
+  .navBack {
+    background-color: #231f1e;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+  }
+  .estilo_nav {
+    text-align: right;
+    list-style-position: unset;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 500px;
+  }
+  .estilo_nav li {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+  }
+  .estilo_nav li a {
+    color: bisque;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    list-style-type: upper-roman;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
